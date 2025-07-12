@@ -8,7 +8,7 @@ SELECT gender
 FROM employee_demographics
 GROUP BY gender;
 
--- ⚠️ Invalid: first_name not in GROUP BY or aggregate function
+-- Invalid: first_name not in GROUP BY or aggregate function
 -- This may work in MySQL but not recommended. Should fix by including proper aggregation or grouping
 SELECT gender, COUNT(first_name) AS count
 FROM employee_demographics
@@ -59,7 +59,7 @@ SELECT *
 FROM employee_demographics
 ORDER BY gender DESC, age DESC;
 
--- ⚠️ Column position usage: ORDER BY 5, 4 means order by the 5th and 4th columns
+-- Column position usage: ORDER BY 5, 4 means order by the 5th and 4th columns
 -- Not recommended: Use column names instead of positions for clarity and reliability
 SELECT * 
 FROM employee_demographics
