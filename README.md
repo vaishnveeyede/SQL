@@ -1,2 +1,3 @@
 # SQL
-Collection of SQL scripts for table creation, insertion, and queries.
+This repository contains SQL scripts for creating, populating, and querying the Parks and Recreation employee database.
+
