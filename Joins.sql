@@ -9,7 +9,7 @@ FROM employee_demographics;
 SELECT * 
 FROM employee_salary;
 
--- 🔁 INNER JOIN: Returns only records that have matching values in both tables
+-- INNER JOIN: Returns only records that have matching values in both tables
 SELECT *
 FROM employee_demographics AS ed
 INNER JOIN employee_salary AS es
@@ -84,7 +84,7 @@ JOIN parks_departments AS pd
     ON es.dept_id = pd.department_id
 GROUP BY pd.department_name;
 
----- NNER JOIN with filtering: Find employees with same first name but different IDs
+---- INNER JOIN with filtering: Find employees with same first name but different IDs
 SELECT emp1.first_name, emp1.employee_id AS id1, emp2.employee_id AS id2
 FROM employee_demographics AS emp1
 JOIN employee_demographics AS emp2
