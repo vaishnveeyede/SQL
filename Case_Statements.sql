@@ -25,10 +25,10 @@ SELECT
     END AS age_category
 FROM employee_demographics;
 
--- ============================================
+
 -- 3. CLASSIFY EMPLOYEES WITH CUSTOM LABELS
 --    (A playful version with humorous naming)
--- ============================================
+
 SELECT 
     first_name, 
     last_name, 
